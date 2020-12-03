@@ -74,35 +74,35 @@ sudo -H pip3 install --upgrade pip
 sudo -H pip3 install virtualenv
 ```
 
-	3. Creating our virtual environment 
-	```
-	cd ./path/to/this/repo
-	virtualenv movies_django_env
-	```
+3.1 Creating our virtual environment 
+```
+cd ./path/to/this/repo
+virtualenv movies_django_env
+```
 
-	3. Before we install our project's requirements, we need to activate the virtual environment
-	```
-	source ./movies_django_env/bin/activate
-	```
-	With this command your prompt should change to indicate that you are now in a Python virtual environment
+3.2 Before we install our project's requirements, we need to activate the virtual environment
+```
+source ./movies_django_env/bin/activate
+```
+With this command your prompt should change to indicate that you are now in a Python virtual environment
 
-	3. With your virtual environment active, install Django, Gunicorn, and the psycopg2 PostgreSQL adaptor with the local instance of pip
-	```
-	pip install django gunicorn psycopg2-binary django-cors-headers djangorestframework
-	```
-	We are using the default requirements and other two:
+3.3 With your virtual environment active, install Django, Gunicorn, and the psycopg2 PostgreSQL adaptor with the local instance of pip
+```
+pip install django gunicorn psycopg2-binary django-cors-headers djangorestframework
+```
+We are using the default requirements and other two:
 
-		- [Cross-Origin Resource Sharing (CORS)](https://github.com/adamchainz/django-cors-headers#configuration)
-		- [Restful API](https://www.django-rest-framework.org/#installation)
+	- [Cross-Origin Resource Sharing (CORS)](https://github.com/adamchainz/django-cors-headers#configuration)
+	- [Restful API](https://www.django-rest-framework.org/#installation)
 
-	You do not need to worry about the settings in Django. If you are following me everithing is setup.
+You do not need to worry about the settings in Django. If you are following me everithing is setup.
 
-	3. Runing migrations
-	```
-	cd /path/to/django/project/movies_django
-	python manage.py makemigrations
-	python manage.py migrate
-	```
+3.4 Runing migrations
+```
+cd /path/to/django/project/movies_django
+python manage.py makemigrations
+python manage.py migrate
+```
 	
 4. Import CSV
 
