@@ -30,17 +30,17 @@ The technologies listed down below were not added in this project. Adding this t
 - [Docker](https://www.docker.com/)
 
 ## How to set up development enviroment 
-The information was used for the developer and creator of this project @cjairm. The computer used is a **Debian 9**, but the steps should work for **Ubuntu ^16, ^18, and ^20 **
+The information was used for the developer and creator of this project @cjairm. The computer used is a **Debian 10**, but the steps should work for **Ubuntu 16, 18, and 20 **
 
 1. Installing packages from repositories
 
 We will use the Python pacacke manager (pip) to install additional components
 
 *Python 3*
-'''
+```
 sudo apt-get update
 sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx
-'''
+```
 
 2. Preparing DB
 
