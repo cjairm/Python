@@ -113,6 +113,7 @@ FROM '/path/to/the/file/I/downloaded/movie_plots.csv'
 DELIMITER ',' CSV HEADER;
 ```
 
+```
     Column    |          Type          | Collation | Nullable |                 Default                  
 --------------+------------------------+-----------+----------+------------------------------------------
  id           | integer                |           | not null | nextval('movies_movie_id_seq'::regclass)
@@ -124,6 +125,7 @@ DELIMITER ',' CSV HEADER;
  genre        | character varying(50)  |           | not null | 
  url          | character varying(200) |           | not null | 
  plot         | text                   |           | not null | 
+```
 
 5. Run Django Project
 We can run with the following command
