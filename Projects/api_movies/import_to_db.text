@@ -1,0 +1,17 @@
+                                       Table "public.movies_movie"
+    Column    |          Type          | Collation | Nullable |                 Default                  
+--------------+------------------------+-----------+----------+------------------------------------------
+ id           | integer                |           | not null | nextval('movies_movie_id_seq'::regclass)
+ release_year | smallint               |           | not null | 
+ title        | character varying(100) |           | not null | 
+ origin       | character varying(50)  |           | not null | 
+ director     | character varying(100) |           | not null | 
+ cast         | text                   |           |          | 
+ genre        | character varying(50)  |           | not null | 
+ url          | character varying(200) |           | not null | 
+ plot         | text                   |           | not null | 
+
+
+COPY movies_movie(release_year,title,origin,director,"cast",genre,url,plot)
+FROM '/home/carlos/Documents/Workspace/Python/github.com/Projects/api_movies/movie_plots.csv'
+DELIMITER ',' CSV HEADER;
